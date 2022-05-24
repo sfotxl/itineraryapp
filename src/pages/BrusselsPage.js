@@ -12,7 +12,7 @@ const events = brusselsEvents();
           return (
             <Row row-content className="align-items-center">
               <Col xs={5} key={event.id}>
-                <img src={event.image} alt={event.description} width="100%" />
+                <a href={event.link}><img src={event.image} alt={event.description} width="100%" /></a>
               </Col>
               <Col>
                 <Row>

@@ -122,6 +122,7 @@ export const EVENTS = [
         date: '12',
         day: 'Sunday',
         description: 'Arrive Brussels-Midi',
+        link: 'https://www.eurostar.com/us-en/travel-info/stations/brussels-midi',
         time: '10:35pm'
     },
     {
@@ -132,6 +133,7 @@ export const EVENTS = [
         address: 'Rue Joseph II 32, Brussels, 1000 Belgium',
         date: '12',
         description: 'Check In at the Courtyard-Brussels EU Quarter',
+        link: 'https://www.marriott.com/en-us/hotels/brumt-courtyard-brussels-eu/overview/?scid=554ff96d-1f1d-4761-a71d-dfe66c104af5&gclid=Cj0KCQjwhLKUBhDiARIsAMaTLnEYaG-otfrWCbtUWAHg6xfqsynltDbYI016mFVS-Ot16rTc7JPqT7MaAveuEALw_wcB&gclsrc=aw.ds',
         time: '11:00pm',
         day: 'Sunday',
         confirmation: '85671967'
@@ -142,6 +144,7 @@ export const EVENTS = [
         city: 'Brussels',
         image: beauxImg,
         address: 'Rue du Musée 9 / Museumstraat 9 - 1000 Brussels',
+        link: 'https://www.fine-arts-museum.be/en',
         time: '10:00am',
         day: 'Monday'
     },
@@ -151,6 +154,7 @@ export const EVENTS = [
         city: 'Brussels',
         image: eurostarImg,
         address: 'Avenue Fonsny 47B, 1060 Brussel, Belgium',
+        link: 'https://www.eurostar.com/us-en/travel-info/stations/brussels-midi',
         date: 14,
         time: '8:23am',
         day: 'Tuesday'
