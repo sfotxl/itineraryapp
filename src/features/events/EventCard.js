@@ -1,4 +1,4 @@
-import { Card, CardImg, CardImgOverlay, CardBody, CardTitle } from "reactstrap";
+import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
 
 const EventCard = ({ event }) => {
   const { image, name } = event;

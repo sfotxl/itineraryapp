@@ -1,4 +1,4 @@
-import { getByTitle } from '@testing-library/react';
+
 import planeImg from '../assets/img/plane.jpeg';
 import popImg from '../assets/img/pop.jpeg';
 import menagerieImg from '../assets/img/menagerie.jpeg';
@@ -65,7 +65,7 @@ export const EVENTS = [
         id: 5,
         name: 'Pop!', 
         place: 'Eagle - London',
-        date: '11',
+        date: 11,
         day: 'Saturday',
         city: 'London',
         time: '9:00pm-4:00am',
@@ -78,8 +78,10 @@ export const EVENTS = [
         id: 6,
         name: 'Schloss Schwerin', 
         place: 'Schloss Schwerin',
-        date: '15',
+        date: 15,
         time: '4:00pm-6:00pm',
+        city: 'Hamburg',
+        day: 'Wednesday',
         image: schwerinImg,
         address: 'Lennéstrasse 1, 19053 Schwerin, Germany',
         description: 'Confirmation: 86579042',
@@ -142,5 +144,15 @@ export const EVENTS = [
         address: 'Rue du Musée 9 / Museumstraat 9 - 1000 Brussels',
         time: '10:00am',
         day: 'Monday'
+    },
+    {
+        id: 12,
+        name: 'Depart Brussels-Midi',
+        city: 'Brussels',
+        image: eurostarImg,
+        address: 'Avenue Fonsny 47B, 1060 Brussel, Belgium',
+        date: 14,
+        time: '8:23am',
+        day: 'Tuesday'
     }
 ];

@@ -1,4 +1,4 @@
-import { Col, Row } from "reactstrap";
+
 import EventCard from "./EventCard";
 import { selectAllEvents } from "./EventsSlice";
 

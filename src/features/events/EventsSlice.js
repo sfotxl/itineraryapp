@@ -18,3 +18,19 @@ export const brusselsEvents = (event) => {
 
     return brusselslice;
 };
+
+
+export const berlinEvents = (event) => {
+    const berlinslice = EVENTS.filter((event) => event.city === 'Berlin');
+    berlinslice.sort((a,b) => a.time-b.time);
+
+    return berlinslice;
+};
+
+
+export const hamburgEvents = (event) => {
+    const hamburglice = EVENTS.filter((event) => event.city === 'Hamburg');
+    hamburglice.sort((a,b) => a.time-b.time);
+
+    return hamburglice;
+};

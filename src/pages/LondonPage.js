@@ -1,8 +1,6 @@
 import Header from "../components/Header";
 import { londonEvents } from "../features/events/EventsSlice";
 import { Row, Col, Container } from "reactstrap";
-import EventDetail from "../features/events/EventDetail";
-import EventCard from "../features/events/EventCard";
 
 const LondonPage = () => {
   const events = londonEvents();
@@ -12,8 +10,8 @@ const LondonPage = () => {
         {events.map((event) => {
           return (
             <Row row-content className="align-items-center">
-              <Col xs={5} key={event.id}>
-                <img src={event.image} width="100%" />
+              <Col sm={5} key={event.id}>
+                <img src={event.image} alt={event.name} width="100%" height="20%"/>
               </Col>
               <Col>
                 <Row>

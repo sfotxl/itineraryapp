@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import DisplayList from "../features/display/DisplayList";
 import { brusselsEvents } from "../features/events/EventsSlice";
 import { Container, Row, Col } from "reactstrap";
 
@@ -13,7 +12,7 @@ const events = brusselsEvents();
           return (
             <Row row-content className="align-items-center">
               <Col xs={5} key={event.id}>
-                <img src={event.image} width="100%" />
+                <img src={event.image} alt={event.description} width="100%" />
               </Col>
               <Col>
                 <Row>

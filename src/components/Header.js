@@ -1,14 +1,11 @@
 import {
   Navbar,
-  NavItem,
   Nav,
   NavbarToggler,
   Collapse,
-  NavbarBrand,
 } from "reactstrap";
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import planeImg from "../assets/img/plane.jpeg";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
