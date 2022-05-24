@@ -12,7 +12,7 @@ const BerlinPage = () => {
           return (
             <Row row-content className="align-items-center">
               <Col sm={5} key={event.id}>
-                <img src={event.image} width="100%" />
+                <img src={event.image} alt={event.name} width="100%" />
               </Col>
               <Col>
                 <Row>

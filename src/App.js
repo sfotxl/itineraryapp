@@ -4,9 +4,6 @@ import BerlinPage from "./pages/BerlinPage";
 import LondonPage from "./pages/LondonPage";
 import BrusselsPage from "./pages/BrusselsPage";
 import HamburgPage from "./pages/HamburgPage";
-import { Container } from "reactstrap";
-
-import Header from "./components/Header";
 import { Routes, BrowserRouter, Route } from "react-router-dom";
 
 function App() {
