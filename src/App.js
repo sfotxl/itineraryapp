@@ -4,12 +4,12 @@ import BerlinPage from "./pages/BerlinPage";
 import LondonPage from "./pages/LondonPage";
 import BrusselsPage from "./pages/BrusselsPage";
 import HamburgPage from "./pages/HamburgPage";
-import { Routes, BrowserRouter, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 
 function App() {
   return (
   
-      <BrowserRouter>
+      
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/London" element={<LondonPage/>} />
@@ -17,7 +17,7 @@ function App() {
           <Route path="/Hamburg" element={<HamburgPage />} />
           <Route path="/Brussels" element={<BrusselsPage />} />
         </Routes>
-      </BrowserRouter>
+  
       
   );
 }
