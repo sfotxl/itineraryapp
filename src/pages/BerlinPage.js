@@ -2,43 +2,46 @@
 import { Container, Col, Row } from "reactstrap";
 import { berlinEvents } from "../features/events/EventsSlice";
 import Header from "../components/Header";
+import { selectEventsByCity } from "../features/events/EventsSlice";
 
 const BerlinPage = () => {
-    const events = berlinEvents();
+    const events = selectEventsByCity('Berlin');
     return (
-        <Container>
-        <Header />
-        {events.map((event) => {
-          return (
-            <Row row-content className="align-items-center">
-              <Col sm={5} key={event.id}>
-                <img src={event.image} alt={event.name} width="100%" />
-              </Col>
-              <Col>
-                <Row>
-                  <Col className="bg-dark text-white" key={event.name}>
-                    {event.name}
+      <Container>
+      <Header />
+      {events.map((event) => {
+
+        const {name, id, image, description, link, address, day, time} = event;
+        return (
+          <Row row-content className="align-items-center">
+            <Col sm={5} key={id}>
+              <a href={link}><img src={image} alt={description} width="100%" /></a>
+            </Col>
+            <Col>
+              <Row>
+                <Col className="bg-dark text-white" key={name}>
+                  {name}
+                </Col>
+              </Row>
+              <Row>
+                <Col><em>{address}</em></Col>
+                <Col xs='2'>
+                  <Row>
+                      <Col>{day}</Col>
+                  </Row>
+                  <Row>
+                      <Col>{time}</Col>
+                  </Row>
                   </Col>
-                </Row>
-                <Row>
-                  <Col><em>{event.address}</em></Col>
-                  <Col xs='2'>
-                    <Row>
-                        <Col>{event.day}</Col>
-                    </Row>
-                    <Row>
-                        <Col>{event.time}</Col>
-                    </Row>
-                    </Col>
-                </Row>
-                <Row>
-                  <Col>{event.description}</Col>
-                </Row>
-              </Col>
-            </Row>
-          );
-        })}
-      </Container>
+              </Row>
+              <Row>
+                <Col>{description}</Col>
+              </Row>
+            </Col>
+          </Row>
+        );
+      })}
+    </Container>
     );
 };
 

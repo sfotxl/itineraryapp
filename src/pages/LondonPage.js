@@ -1,37 +1,41 @@
 import Header from "../components/Header";
 import { londonEvents } from "../features/events/EventsSlice";
 import { Row, Col, Container } from "reactstrap";
+import { selectEventsByCity } from "../features/events/EventsSlice";
 
 const LondonPage = () => {
-  const events = londonEvents();
+  // const events = londonEvents();
+  const events = selectEventsByCity('London');
   return (
     <Container>
         <Header />
         {events.map((event) => {
+
+          const {name, id, image, description, link, address, day, time} = event;
           return (
             <Row row-content className="align-items-center">
-              <Col sm={5} key={event.id}>
-                <img src={event.image} alt={event.name} width="100%" height="20%"/>
+              <Col sm={5} key={id}>
+                <a href={link}><img src={image} alt={description} width="100%" /></a>
               </Col>
               <Col>
                 <Row>
-                  <Col className="bg-dark text-white" key={event.name}>
-                    {event.name}
+                  <Col className="bg-dark text-white" key={name}>
+                    {name}
                   </Col>
                 </Row>
                 <Row>
-                  <Col><em>{event.address}</em></Col>
+                  <Col><em>{address}</em></Col>
                   <Col xs='2'>
                     <Row>
-                        <Col>{event.day}</Col>
+                        <Col>{day}</Col>
                     </Row>
                     <Row>
-                        <Col>{event.time}</Col>
+                        <Col>{time}</Col>
                     </Row>
                     </Col>
                 </Row>
                 <Row>
-                  <Col>{event.description}</Col>
+                  <Col>{description}</Col>
                 </Row>
               </Col>
             </Row>

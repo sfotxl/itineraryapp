@@ -1,10 +1,10 @@
 import Header from "../components/Header";
-import { brusselsEvents } from "../features/events/EventsSlice";
 import { Container, Row, Col } from "reactstrap";
+import { selectEventsByCity } from "../features/events/EventsSlice";
 
 const BrusselsPage = () => {
 
-const events = brusselsEvents();
+const events = selectEventsByCity('Brussels');
     return (
         <Container>
         <Header />
