@@ -1,5 +1,6 @@
 import { selectEventsByCity } from "../features/events/EventsSlice";
 import Header from "./Header";
+import { Row, Col } from "reactstrap";
 
 const EventsList = (city) => {
   const events = selectEventsByCity(city);
