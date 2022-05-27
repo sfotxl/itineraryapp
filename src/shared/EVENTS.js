@@ -14,7 +14,6 @@ import heathrowImg from "../assets/img/lhr.png";
 import baseImg from "../assets/img/basejump.png";
 import dandoyImg from "../assets/img/dandoy.jpeg";
 import zuidImg from "../assets/img/zuid.jpeg";
-import wandererImg from "../assets/img/wanderer.jpg";
 import hamburgerImg from "../assets/img/hamburger.jpeg";
 export const EVENTS = [
   {

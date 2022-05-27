@@ -1,4 +1,3 @@
-import { Container, Col, Row } from "reactstrap";
 import { selectEventsByCity } from "../features/events/EventsSlice";
 import Header from "./Header";
 
