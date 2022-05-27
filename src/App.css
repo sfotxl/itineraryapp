@@ -2,17 +2,36 @@
   text-align: center;
 } */
 
-
+.eventName {
+ font-size: 28px; 
+}
 
 a {
-  color: blue;
+  color: fuchsia;
+}
+
+.bg-dark {
+  color: cyan;
+}
+
+.bodyodyody {
+  background-color: black;
+  color: white;
+  font-size: 20px;
+}
+
+.cyan {
+  color: cyan;
 }
 
 .navbar {
-  background-color: darkgray;
+  background-color: black;
   text-align: center;
   padding-bottom: 4px;
+  font-size: 30px;
 }
+
+
 
 .center {
   height: 200px;

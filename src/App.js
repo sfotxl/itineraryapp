@@ -5,20 +5,19 @@ import LondonPage from "./pages/LondonPage";
 import BrusselsPage from "./pages/BrusselsPage";
 import HamburgPage from "./pages/HamburgPage";
 import { Routes, Route } from "react-router-dom";
+import { Container } from "reactstrap";
 
 function App() {
   return (
-  
-      
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/London" element={<LondonPage/>} />
-          <Route path="/Berlin" element={<BerlinPage />} />
-          <Route path="/Hamburg" element={<HamburgPage />} />
-          <Route path="/Brussels" element={<BrusselsPage />} />
-        </Routes>
-  
-      
+    <Container fluid className='bodyodyody'>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/London" element={<LondonPage />} />
+        <Route path="/Berlin" element={<BerlinPage />} />
+        <Route path="/Hamburg" element={<HamburgPage />} />
+        <Route path="/Brussels" element={<BrusselsPage />} />
+      </Routes>
+    </Container>
   );
 }
 
