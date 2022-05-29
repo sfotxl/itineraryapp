@@ -19,6 +19,9 @@ import lucImg from "../assets/img/luc.png";
 import autobahnImg from "../assets/img/autobahn.jpeg";
 import ritterImg from "../assets/img/ritter.png";
 import berghainImg from "../assets/img/berghain.jpg";
+import museumsinselImg from "../assets/img/museumsinsel.jpg";
+import hiltonImg from "../assets/img/hilton.png";
+import gayBerlinImg from "../assets/img/gayBerlin.webp";
 
 
 export const EVENTS = [
@@ -33,7 +36,8 @@ export const EVENTS = [
     image: heathrowImg,
     day: "Saturday",
     address: "Longford TW6, United Kingdom",
-    description: "Arrive at London-Heathrow Airport via United Airlines Flight 146",
+    description:
+      "Arrive at London-Heathrow Airport via United Airlines Flight 146",
     cost: 220,
   },
   {
@@ -96,7 +100,7 @@ export const EVENTS = [
   },
   {
     id: 151600,
-    name: "Schloss Schwerin",
+    name: "Going To The Castle",
     place: "Schloss Schwerin",
     date: 15,
     time: "4:00pm",
@@ -113,9 +117,9 @@ export const EVENTS = [
     id: 121934,
     name: "London St Pancras Int' to Brussels-Midi/Zuid",
     city: "London",
-    place: 'St. Pancras International',
+    place: "St. Pancras International",
     image: stpancrasImg,
-    address: 'Euston Rd, London N1C 4QP, United Kingdom',
+    address: "Euston Rd, London N1C 4QP, United Kingdom",
     date: "12",
     day: "Sunday",
     description: "Depart for Brussels-Midi",
@@ -151,22 +155,22 @@ export const EVENTS = [
   },
   {
     id: 131030,
-    name: 'Speculoos City',
-    place: 'Maison Dandoy, Grand Place',
-    city: 'Brussels',
-    time: '10:30am',
+    name: "Speculoos City",
+    place: "Maison Dandoy, Grand Place",
+    city: "Brussels",
+    time: "10:30am",
     image: dandoyImg,
     date: 13,
-    description: 'Breakfast is where they invented Speculoos. nbd.',
-    link: 'https://maisondandoy.com/',
-    day: 'Monday',
-    address: 'Rue au Beurre 31, Brussels 1000 Belgium'
+    description: "Breakfast is where they invented Speculoos. nbd.",
+    link: "https://maisondandoy.com/",
+    day: "Monday",
+    address: "Rue au Beurre 31, Brussels 1000 Belgium",
   },
   {
     id: 131130,
     name: "Royal Museums of Fine Arts of Belgium",
     city: "Brussels",
-    place: 'The Museum of Old Masters',
+    place: "The Museum of Old Masters",
     date: 13,
     image: beauxImg,
     address: "Rue du Musée 9 / Museumstraat 9 - 1000 Brussels",
@@ -233,9 +237,22 @@ export const EVENTS = [
     address: "Glockengießerwall 5, 20095 Hamburg, Germany",
     link: "https://www.hamburger-kunsthalle.de/",
     date: 15,
-    description: 'We need more decor for our house.',
+    description: "We need more decor for our house.",
     time: "10:00am",
     day: "Wednesday",
+  },
+  {
+    id: 160900,
+    name: "BrandenburgTor und Tiergarten",
+    place: "City Centre",
+    city: "Berlin",
+    image: gayBerlinImg,
+    address: "Pariser Platz, Berlin, Germany",
+    link: "https://www.nationalcar.com/en/car-rental/locations/de/hamburg-airport-g5n2.html?gclid=CjwKCAjwyryUBhBSEiwAGN5OCCjcbuDAe0cXDaV8z9ujiDvXw368kO6mNZalgz5Z1RhuNJKaRHIB1hoC5eYQAvD_BwE&mcid=paidsearch:35877485&targetid=kwd-349755280534&ef_id=CjwKCAjwyryUBhBSEiwAGN5OCCjcbuDAe0cXDaV8z9ujiDvXw368kO6mNZalgz5Z1RhuNJKaRHIB1hoC5eYQAvD_BwE:G:s&s_kwcid=AL!4824!3!375797825956!e!!g!!national%20car%20rental%20hamburg%20airport!2086457681!72113517810&campaignid=2086457681&gclsrc=aw.ds",
+    date: 16,
+    description: "Explore BrandenburgTor and Tiergarten",
+    time: "9:00am",
+    day: "Thursday",
   },
   {
     id: 151200,
@@ -246,20 +263,20 @@ export const EVENTS = [
     address: "Flughafenstr. 1 3, 22335 Hamburg, Germany",
     link: "https://www.nationalcar.com/en/car-rental/locations/de/hamburg-airport-g5n2.html?gclid=CjwKCAjwyryUBhBSEiwAGN5OCCjcbuDAe0cXDaV8z9ujiDvXw368kO6mNZalgz5Z1RhuNJKaRHIB1hoC5eYQAvD_BwE&mcid=paidsearch:35877485&targetid=kwd-349755280534&ef_id=CjwKCAjwyryUBhBSEiwAGN5OCCjcbuDAe0cXDaV8z9ujiDvXw368kO6mNZalgz5Z1RhuNJKaRHIB1hoC5eYQAvD_BwE:G:s&s_kwcid=AL!4824!3!375797825956!e!!g!!national%20car%20rental%20hamburg%20airport!2086457681!72113517810&campaignid=2086457681&gclsrc=aw.ds",
     date: 15,
-    description: 'Spend the day on the Autobahn.',
+    description: "Spend the day on the Autobahn.",
     time: "12:00pm",
     day: "Wednesday",
   },
   {
     id: 161200,
-    link: 'https://www.nationalcar.com/en/car-rental/locations/de/berlin-brandenburg-airport-g5n3.html',
+    link: "https://www.nationalcar.com/en/car-rental/locations/de/berlin-brandenburg-airport-g5n3.html",
     name: "Return the BMW",
     place: "Berlin-Brandenburg International Airport",
     city: "Berlin",
     image: autobahnImg,
     address: "12529 Schonefeld, Brandenburg, Germany",
     date: 16,
-    description: 'Return the BMW.',
+    description: "Return the BMW.",
     time: "12:00pm",
     day: "Thursday",
   },
@@ -269,13 +286,13 @@ export const EVENTS = [
     place: "Hotel Luc",
     city: "Berlin",
     image: lucImg,
-    address: "Glockengießerwall 5, 20095 Hamburg, Germany",
+    address: "Charlottenstraße 50, 10117 Berlin, Germany",
     link: "https://www.hamburger-kunsthalle.de/",
     date: 17,
-    description: 'Autograph Collection',
+    description: "Autograph Collection",
     time: "3:00pm",
     day: "Friday",
-    confirmation: 'Confirmation: 86921880'
+    confirmation: "Confirmation: 86921880",
   },
   {
     id: 171200,
@@ -283,13 +300,14 @@ export const EVENTS = [
     place: "Ritter HQ",
     city: "Berlin",
     image: ritterImg,
-    address: "Ritter Sport Bunte Schokowelt, Französische Straße 24, 10117 Berlin",
+    address:
+      "Ritter Sport Bunte Schokowelt, Französische Straße 24, 10117 Berlin",
     link: "https://www.ritter-sport.com/berlin",
     date: 17,
-    description: 'Make your own chocolate. This is a gift from Victoria.',
+    description: "Make your own chocolate. This is a gift from Victoria.",
     time: "12:00pm",
     day: "Friday",
-    confirmation: 'Confirmation: BB20220520227002'
+    confirmation: "Confirmation: BB20220520227002",
   },
   {
     id: 172100,
@@ -300,10 +318,11 @@ export const EVENTS = [
     address: "Am Wriezener Bahnhof, 10243 Berlin, Germany",
     link: "https://www.berghain.berlin/en/event/73160/",
     date: 17,
-    description: 'Like Giorgio on the radio at midnight, only on top of the world.',
+    description:
+      "Like Giorgio on the radio at midnight, only on top of the world.",
     time: "9:00pm",
     day: "Friday",
-    confirmation: ''
+    confirmation: "",
   },
   {
     id: 182000,
@@ -313,10 +332,37 @@ export const EVENTS = [
     image: baseImg,
     address: "Park Inn Hotel, Alexanderplatz 7, 10178 Berlin, Germany",
     link: "https://www.base-flying.de/",
-    description: "This is where you jump off a skyscraper. Because what else could compare to falling out a plane towards Paradise?",
+    description:
+      "This is where you jump off a skyscraper. Because what else could compare to falling out a plane towards Paradise?",
     date: 18,
     time: "8:00pm",
     day: "Saturday",
-    confirmation: 'Confirmation: 2051833081'
-  }
+    confirmation: "Confirmation: 2051833081",
+  },
+  {
+    id: 151500,
+    name: "Check In - Hilton Berlin",
+    city: "Berlin",
+    place: "Hilton Berlin",
+    image: hiltonImg,
+    time: "3:00pm",
+    address: "Mohrenstraße 30, 10117 Berlin, Germany",
+    day: "Wednesday",
+    date: "15",
+    description: "Check In at the Hilton Berlin",
+    confirmation: "Confirmation: 3254552011",
+    link: "https://www.hilton.com/en/hotels/berhitw-hilton-berlin/?SEO_id=GMB-EMEA-TW-BERHITW",
+  },
+  {
+    id: 181000,
+    name: "Museumsinsel",
+    city: "Berlin",
+    place: "Museumsinsel",
+    image: museumsinselImg,
+    time: "11:00am",
+    address: "Museum Island, Berlin, Germany",
+    day: "Saturday",
+    description: "Explore Museum Island",
+    link: "https://www.smb.museum/en/museums-institutions/altes-museum/home/",
+  },
 ];
