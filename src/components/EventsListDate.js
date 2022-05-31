@@ -1,9 +1,11 @@
-import { selectEvents } from "../features/events/EventsSlice";
+import { selectEventsByDate } from "../features/events/EventsSlice";
 import Header from "./Header";
+import { selectEvents } from "../features/events/EventsSlice";
 import { Row, Col } from "reactstrap";
 
-const EventsList = (city, date) => {
-  const events = selectEvents(city, date);
+const EventsListDate = (date) => {
+  const events = selectEventsByDate(date);
+  console.log(events);
   return (
     <>
       <Header />
@@ -53,4 +55,4 @@ const EventsList = (city, date) => {
     </>
   );
 };
-export default EventsList;
+export default EventsListDate;

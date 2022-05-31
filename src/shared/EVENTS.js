@@ -22,6 +22,7 @@ import berghainImg from "../assets/img/berghain.jpg";
 import museumsinselImg from "../assets/img/museumsinsel.jpg";
 import hiltonImg from "../assets/img/hilton.png";
 import gayBerlinImg from "../assets/img/gayBerlin.webp";
+import antinoosImg from '../assets/img/antinoos.jpeg';
 
 
 export const EVENTS = [
@@ -30,7 +31,7 @@ export const EVENTS = [
     name: "Arrive at London Heathrow Airport via Newark-Liberty",
     city: "London",
     place: "London - Heathrow Airport",
-    date: "11",
+    date: 11,
     time: "11:30am",
     link: "https://www.heathrow.com/",
     image: heathrowImg,
@@ -45,7 +46,7 @@ export const EVENTS = [
     name: "Harwood Arms",
     place: "Fulham",
     city: "London",
-    date: "11",
+    date: 11,
     day: "Saturday",
     image: harwoodImg,
     address: "Walham Grove, London SW6 1QP, United Kingdom",
@@ -58,7 +59,7 @@ export const EVENTS = [
     id: 111500,
     name: "Check In - Residence Inn, Kensington",
     place: "Residence Inn London, Kensington",
-    date: "11",
+    date: 11,
     day: "Saturday",
     city: "London",
     time: "3:00pm",
@@ -73,7 +74,7 @@ export const EVENTS = [
     id: 111930,
     name: "The Glass Menagerie",
     place: "Duke of York's Theatre, West End",
-    date: "11",
+    date: 11,
     day: "Saturday",
     city: "London",
     time: "7:30pm",
@@ -120,7 +121,7 @@ export const EVENTS = [
     place: "St. Pancras International",
     image: stpancrasImg,
     address: "Euston Rd, London N1C 4QP, United Kingdom",
-    date: "12",
+    date: 12,
     day: "Sunday",
     description: "Depart for Brussels-Midi",
     link: "https://stpancras.com/",
@@ -133,7 +134,7 @@ export const EVENTS = [
     city: "Brussels",
     image: eurostarImg,
     address: "Avenue Fonsny 47B, 1060 Brussel, Belgium",
-    date: "12",
+    date: 12,
     day: "Sunday",
     description: "Arrive Brussels-Midi",
     link: "https://www.eurostar.com/us-en/travel-info/stations/brussels-midi",
@@ -348,7 +349,7 @@ export const EVENTS = [
     time: "3:00pm",
     address: "Mohrenstraße 30, 10117 Berlin, Germany",
     day: "Wednesday",
-    date: "15",
+    date: 15,
     description: "Check In at the Hilton Berlin",
     confirmation: "Confirmation: 3254552011",
     link: "https://www.hilton.com/en/hotels/berhitw-hilton-berlin/?SEO_id=GMB-EMEA-TW-BERHITW",
@@ -358,11 +359,12 @@ export const EVENTS = [
     name: "Museumsinsel",
     city: "Berlin",
     place: "Museumsinsel",
-    image: museumsinselImg,
+    image: antinoosImg,
     time: "11:00am",
     address: "Museum Island, Berlin, Germany",
     day: "Saturday",
     description: "Explore Museum Island",
     link: "https://www.smb.museum/en/museums-institutions/altes-museum/home/",
   },
+  
 ];
