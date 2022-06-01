@@ -1,4 +1,5 @@
 import { EVENTS } from "../../shared/EVENTS";
+import EventsList from "./EventsList";
 
 export const selectAllEvents = () => {
     return EVENTS;
@@ -20,3 +21,7 @@ export const selectEventsByDate = (date) => {
     slice.sort((a,b) => a.id-b.id);
     return slice;
 };
+
+export const selectAllEventsRandom = () => {
+    return EVENTS.sort(()=>Math.random() - 0.5);
+}

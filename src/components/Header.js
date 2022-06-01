@@ -11,7 +11,7 @@ const Header = () => {
         <NavbarToggler onClick={() => setMenuOpen(!menuOpen)} />
         <Collapse isOpen={menuOpen} navbar>
           <Nav navbar className="flex-grow-1 justify-content-evenly">
-            <NavLink to="/">Home {" > "}</NavLink>
+            <NavLink to="/Map">Home {" > "}</NavLink>
 
             <NavLink to="/London">London {"  >    "}</NavLink>
 

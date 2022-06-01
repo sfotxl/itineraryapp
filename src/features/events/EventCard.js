@@ -1,14 +1,18 @@
 import { Card, CardImg, CardImgOverlay, CardTitle } from "reactstrap";
+import { Link } from "react-router-dom";
 
 const EventCard = ({ event }) => {
-  const { image, name } = event;
+  const { image, city, name } = event;
+  const citylink = '/' + city;
   return (
-    <Card>
-      <CardImg width="200px" src={image} alt={name} />
-      <CardImgOverlay>
-        <CardTitle>{name}</CardTitle>
-      </CardImgOverlay>
-    </Card>
+    <Link to={citylink}>
+      <Card> 
+        <CardImg width="100%" height="200px" src={image} alt={name} />
+        <CardImgOverlay>
+          <CardTitle>{city}</CardTitle>
+        </CardImgOverlay>
+      </Card>
+    </Link>
   );
 };
 

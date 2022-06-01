@@ -8,7 +8,7 @@ import { Routes, Route } from "react-router-dom";
 import { Container } from "reactstrap";
 import EventsListDate from './components/EventsListDate';
 import EventsList from "./components/EventsList";
-import ElevenPage from "./pages/11";
+import EventMap from "./pages/EventMap";
 
 function App() {
   return (
@@ -19,7 +19,8 @@ function App() {
         <Route path="/Berlin" element={<BerlinPage />} />
         <Route path="/Hamburg" element={<HamburgPage />} />
         <Route path="/Brussels" element={<BrusselsPage />} />
-        <Route path="11" element={<ElevenPage />} />
+        <Route path="/Map" element={<EventMap/>}/>
+        <Route path="/11" element={<EventMap/>} />
         <Route path="12" element={EventsListDate(12)} />
         <Route path="13" element={EventsListDate(13)} />
         <Route path="14" element={EventsListDate(14)} />

@@ -23,6 +23,7 @@ import museumsinselImg from "../assets/img/museumsinsel.jpg";
 import hiltonImg from "../assets/img/hilton.png";
 import gayBerlinImg from "../assets/img/gayBerlin.webp";
 import antinoosImg from '../assets/img/antinoos.jpeg';
+import lufthansaImg from '../assets/img/lufthansa.jpeg';
 
 
 export const EVENTS = [
@@ -360,11 +361,25 @@ export const EVENTS = [
     city: "Berlin",
     place: "Museumsinsel",
     image: antinoosImg,
+    date: 18,
     time: "11:00am",
     address: "Museum Island, Berlin, Germany",
     day: "Saturday",
     description: "Explore Museum Island",
     link: "https://www.smb.museum/en/museums-institutions/altes-museum/home/",
   },
+  {
+    id: 191200,
+    name: "Depart Frankfurt Airport",
+    city: "Frankfurt",
+    place: "Frankfurt International Airport",
+    image: lufthansaImg,
+    time: "11:00am",
+    date: 19,
+    address: "60547 Frankfurt, Germany",
+    day: "Sunday",
+    description: "Depart Frankfurt Airport",
+    link: "https://www.frankfurt-airport.com/en.html",
+  }
   
 ];
