@@ -14,6 +14,10 @@ a {
   color: cyan;
 }
 
+.bg-black {
+  background-color: black;
+}
+
 .bodyodyody {
   background-color: black;
   color: white;
@@ -21,9 +25,10 @@ a {
 }
 
 img {
-  border: 1px solid cyan;
+  border: 2px solid cyan;
   margin-right: auto;
   margin-bottom: 9px;
+  border-radius: 35px;
 
 }
 
@@ -68,8 +73,13 @@ img {
   font-size: 1.25rem;
 }
 
+.card-img {
+  border-radius: 50px;
+  border: 2px cyan solid;
+}
+
 .card-img-overlay .card-title {
-  color: white;
+  color: orange;
   text-align: center;
   background-color: rgba(0,0,0,0.5);
 }

@@ -371,7 +371,7 @@ export const EVENTS = [
   {
     id: 191200,
     name: "Depart Frankfurt Airport",
-    city: "Frankfurt",
+    city: "Berlin",
     place: "Frankfurt International Airport",
     image: lufthansaImg,
     time: "11:00am",
