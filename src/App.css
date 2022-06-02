@@ -7,7 +7,7 @@
 }
 
 a {
-  color: fuchsia;
+  color: yellow;
 }
 
 .bg-dark {
@@ -19,7 +19,7 @@ a {
 }
 
 .bodyodyody {
-  background-color: black;
+  background-color: darkslategray;
   color: white;
   font-size: 20px;
 }
@@ -37,7 +37,7 @@ img {
 }
 
 .navbar {
-  background-color: black;
+  background-color: darkslategray;
   text-align: center;
   padding-bottom: 4px;
   font-size: 30px;
@@ -60,7 +60,7 @@ img {
   padding-bottom: 0;
   margin-bottom: 1rem;
   transition: all .2s ease-in-out;
-  background-color: rgba(0,0,0,.01);
+  background-color: rgba(0,0,0,.001);
 }
 
 .card:hover {

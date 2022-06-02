@@ -15,7 +15,7 @@ function App() {
     <Container fluid className='bodyodyody'>
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/London" element={<LondonPage />} />
+        <Route path="/London" element={EventsList('London')}/>
         <Route path="/Berlin" element={<BerlinPage />} />
         <Route path="/Hamburg" element={<HamburgPage />} />
         <Route path="/Brussels" element={<BrusselsPage />} />

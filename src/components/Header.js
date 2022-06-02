@@ -23,7 +23,7 @@ const Header = () => {
 <hr/>
 
            <UncontrolledDropdown size="small" nav inNavbar>
-              <DropdownToggle nav caret color="primary" className="text-primary">
+              <DropdownToggle nav caret color="primary" className="text-light">
                 By Day
               </DropdownToggle>
               <DropdownMenu>
