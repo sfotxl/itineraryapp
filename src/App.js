@@ -12,7 +12,7 @@ import EventMap from "./pages/EventMap";
 
 function App() {
   return (
-    <Container fluid className='bodyodyody'>
+    <Container fluid className='bg-black'>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/London" element={EventsList('London')}/>

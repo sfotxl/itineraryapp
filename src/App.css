@@ -7,7 +7,7 @@
 }
 
 a {
-  color: yellow;
+  color: blue;
 }
 
 .bg-dark {
@@ -19,7 +19,7 @@ a {
 }
 
 .bodyodyody {
-  background-color: darkslategray;
+  background-color: black;
   color: white;
   font-size: 20px;
 }
@@ -37,7 +37,7 @@ img {
 }
 
 .navbar {
-  background-color: darkslategray;
+  background-color: black;
   text-align: center;
   padding-bottom: 4px;
   font-size: 30px;
