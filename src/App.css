@@ -6,8 +6,12 @@
  font-size: 28px; 
 }
 
+:root {
+  background-color: black;
+}
+
 a {
-  color: blue;
+  color: yellow;
 }
 
 .bg-dark {
@@ -28,7 +32,7 @@ img {
   border: 2px solid cyan;
   margin-right: auto;
   margin-bottom: 9px;
-  border-radius: 35px;
+  border-radius: 9px;
 
 }
 

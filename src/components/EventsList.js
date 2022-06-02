@@ -21,7 +21,7 @@ const EventsList = (city, date) => {
           time,
         } = event;
         return (
-          <Row row-content className="align-items-center">
+          <Row row-content className="align-items-center mb-2">
             <Col sm={5} key={id}>
               <a href={link}>
                 <img src={image} alt={description} width="100%" />

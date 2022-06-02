@@ -23,7 +23,7 @@ const EventsListDate = (date) => {
           time,
         } = event;
         return (
-          <Row row-content className="align-items-center">
+          <Row className="align-items-center">
             <Col sm={5} key={id}>
               <a href={link}>
                 <img src={image} alt={description} width="100%" />
@@ -36,13 +36,13 @@ const EventsListDate = (date) => {
                 </Col>
                 <Col xs={4}>{place}</Col>
               </Row>
-              <Row>
+              <Row className="text-white">
                 <Col xs={8}>
                   <em>{address}</em>
                 </Col>
                 <Col xs={4}>{day}</Col>
               </Row>
-              <Row>
+              <Row className="text-white">
                 <Col xs={8}>
                   {description} <br /> {confirmation}
                 </Col>
